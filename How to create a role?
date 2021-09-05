@@ -1,0 +1,14 @@
+How to create a role for AWS EC2 Instances? 
+Usually, Roles are used for EC2 Instance and Lambda functions. EC2 instances are virtual servers. Lambda function are serverless compute service, meaning you provide the code, associated dependecies, and configuration.
+Login to AWS console. 
+Search bar: IAM --> press enter
+On the left side, click on "Roles." Roles are used to grant permission to entities such as AWS Resources.
+Click on "Create role." Then pick "EC2" 
+Click "Next:Permissions" at the bottom right corner. Here you can declare what EC2 is able to do. In another words, this is where you provide what type permissions EC2 instance will have. 
+For this example, let's pick that our EC2 instance will have "IAMREADonlyAccess" meaning this EC2 instance will have only read access. 
+Click on "Next:Tags" 
+Tag is optional, but we will skip it right now. 
+Click on "Review"
+Insert "Role name" & "Role Description" 
+Click on "Create role"
+The role is created under the "Role" section. By clicking on this role, policy name and type is displayed. 
