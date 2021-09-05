@@ -1,0 +1,22 @@
+What are access key in AWS?
+Access key are credentials for an IAM user. It is used to sign to the AWS CLI or AWS API. 
+There are two parts to access key: access key id and secret access key. In anther words, access key id is likea username and secret access key is a password. 
+Access key id and secret access key are used together which authenticates a request.
+
+How to create access keys?
+1. Console to AWS console using IAM user. 
+2. Search bar: IAM 
+3. Left side, find "Users"
+4. Select "Security Credentials" tab
+5. Scroll down to "Access Key" and click on "create access key"
+6. Save access key because this is the only secret access key can be viewed or downloaded. Do not share your access key id and secret access key. 
+
+How to configure access key and secret aacces key inot AWS cli? 
+1. Terminal
+2. Type" aws configure"
+3. Here you're asked to enter your access key id: 
+4. Then you're asked to enter your secret access key: 
+5. Then it asks for default region name:
+6. Then asks for default output format: --> JSON 
+7. Now the AWS CLI is configured. 
+8. Run this command to test: aws iam list-users and Enter
